@@ -14,4 +14,10 @@ public class Product {
   private Long id;
   private String name;
   private String description;
+
+  public void updateWith(Product product){
+    this.setName(product.getName());
+    this.setDescription(product.description);
+  }
+
 }
